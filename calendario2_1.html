@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery  Datepicker </title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<style type="text/css">
+	.calendario
+	{
+		width: 240px;
+	}
+	#calendario
+	{
+		width: 20px;
+	}
+</style>
+<script>
+
+	$(document).ready(function() {
+
+		$( "#datepicker" ).datepicker({});
+
+		$("#calendario").click(function() {
+       $("#datepicker").datepicker('show');
+    });
+
+	});
+
+</script>
+</head>
+<body>
+	<div class="calendario">
+			Date: <input class="dpicker" type="text" id="datepicker"><img id="calendario" src="cal1.jpg" border=0 align=right>
+	</div>
+		
+	</div>
+</body>
+</html>
